@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Algorithm Visualizer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="container">
+        <div id="start-screen">
+            <h1>Algorithm Visualizer</h1>
+            <button onclick="showAlgorithmSelection('sorting')">Sorting Algorithms</button>
+            <button onclick="showAlgorithmSelection('searching')">Searching Algorithms</button>
+        </div>
+        <div id="algorithm-selection" class="hidden">
+            <h2 id="algorithm-type"></h2>
+            <button id="algo1" onclick="startVisualization('algo1')"></button>
+            <button id="algo2" onclick="startVisualization('algo2')"></button>
+            <button id="algo3" onclick="startVisualization('algo3')"></button>
+            <button onclick="goBack()">Back</button>
+        </div>
+        <div id="visualization" class="hidden">
+            <h2 id="selected-algorithm"></h2>
+            <div id="animation-area"></div>
+            <button onclick="goBackToSelection()">Back</button>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
