@@ -21,12 +21,30 @@ button {
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
+    border:none;
+    border-radius: 5px;
+    background-color: rgb(240, 221, 199);
 }
 
 #animation-area {
-    width: 80%;
-    height: 400px;
-    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 300px;
     border: 1px solid #ccc;
-    position: relative;
+    background-color: #f4f4f9;
+}
+
+#algorithm-explanation {
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: left;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+    color: #333;
+}
+
+#back-btn {
+    background-color: rgb(255, 132, 132);
 }

@@ -7,24 +7,30 @@
 </head>
 <body>
     <div id="container">
+        <!-- Start Screen -->
         <div id="start-screen">
             <h1>Algorithm Visualizer</h1>
-            <button onclick="showAlgorithmSelection('sorting')">Sorting Algorithms</button>
-            <button onclick="showAlgorithmSelection('searching')">Searching Algorithms</button>
+            <button id="sorting-btn">Sorting Algorithms</button>
+            <button id="searching-btn">Searching Algorithms</button>
         </div>
+
+        <!-- Algorithm Selection Screen -->
         <div id="algorithm-selection" class="hidden">
             <h2 id="algorithm-type"></h2>
-            <button id="algo1" onclick="startVisualization('algo1')"></button>
-            <button id="algo2" onclick="startVisualization('algo2')"></button>
-            <button id="algo3" onclick="startVisualization('algo3')"></button>
-            <button onclick="goBack()">Back</button>
+            <button id="algo1-btn"></button>
+            <button id="algo2-btn"></button>
+            <button id="algo3-btn"></button>
+            <button id="back-btn">Back</button>
         </div>
+
+        <!-- Visualization Screen -->
         <div id="visualization" class="hidden">
             <h2 id="selected-algorithm"></h2>
             <div id="animation-area"></div>
-            <button onclick="goBackToSelection()">Back</button>
+            <div id="algorithm-explanation" style="margin-top: 20px; font-size: 16px; line-height: 1.6;"></div>
+            <button id="back-to-selection-btn">Back</button>
         </div>
     </div>
-    <script src="scripts.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
